@@ -1,0 +1,87 @@
+/* Tampilan dasar */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f8fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Bagian header */
+header {
+    background-color: #1976d2;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    margin: 8px 0;
+    font-size: 17px;
+}
+
+/* Semua section */
+section {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #1976d2;
+    margin-top: 0;
+    border-bottom: 2px solid #e3f2fd;
+    padding-bottom: 8px;
+}
+
+/* Daftar keahlian */
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Bagian proyek */
+.project {
+    background-color: #f5faff;
+    padding: 18px;
+    margin: 15px 0;
+    border-left: 5px solid #1976d2;
+    border-radius: 8px;
+}
+
+.project h3 {
+    margin-top: 0;
+    color: #1565c0;
+}
+
+/* Footer */
+footer {
+    background-color: #1976d2;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Tampilan HP */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    section {
+        margin: 20px 12px;
+        padding: 20px;
+    }
+}
