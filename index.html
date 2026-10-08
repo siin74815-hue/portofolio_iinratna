@@ -3,73 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Iin Ratna</title>
+    <title>Siti Iin Ratna Safitri - Portofolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <header>
-        <h1>Siti Iin Ratna Safitri</h1>
-        <p>Mahasiswa Rekayasa Perangkat Lunak</p>
-        <p>NIM: 22032062</p>
+    <!-- Navigasi Atas (Navbar) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Siti Iin Ratna Safitri</a>
+            <div class="nav-links">
+    <a href="#" class="active">Home</a>
+    <a href="#tentang">About</a>
+    <a href="#proyek">Portofolio</a>
+    <a href="proyek.html" style="color: #ec4899; font-weight: 600;">Detail Proyek →</a>
+    <a href="javascript:void(0)" onclick="openModal()">Contac</a>
+</div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Tampilan Canva) -->
+    <header class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>Halo, Saya</h1>
+                <h2 class="name-highlight">Siti Iin Ratna Safitri</h2>
+                <p class="hero-sub">Mahasiswa Rekayasa Perangkat Lunak | NIM: 22032062</p>
+                <!-- TOMBOL DIPERBAIKI AGAR MEMANGGIL POP-UP -->
+                <button class="btn-contact" onclick="openModal()">Contac me</button>
+            </div>
+    <div class="hero-image-wrapper">
+    <img src="me.jpeg" alt="Siti Iin Ratna Safitri" class="hero-image">
+    
+    <!-- BADGE UI/UX MELAYANG -->
+    <div class="badge-uiux">
+        <span>✨ UI/UX & Web Designer</span>
+    </div>
+</div>
     </header>
 
-    <section>
-        <h2>Tentang Saya</h2>
-        <p>
-            Saya adalah mahasiswa Rekayasa Perangkat Lunak yang memiliki
-            ketertarikan pada pengembangan website dan teknologi informasi.
-            Saya senang mempelajari hal-hal baru dan mengembangkan keterampilan
-            di bidang teknologi.
-        </p>
-    </section>
-
-    <section>
-        <h2>Keahlian</h2>
-        <ul>
-            <li>HTML & CSS</li>
-            <li>Desain UI/UX</li>
-            <li>Canva</li>
-            <li>Pengembangan Website</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Proyek Saya</h2>
-
-        <div class="project">
-            <h3>1. Website Portofolio</h3>
+    <!-- Isi Utama Portofolio -->
+    <main class="container">
+        
+        <!-- Tentang Saya -->
+        <section id="tentang" class="section-card">
+            <h2>Tentang Saya</h2>
             <p>
-                Website portofolio sederhana yang dibuat menggunakan HTML
-                dan CSS serta di-deploy menggunakan layanan cloud.
+                Saya adalah mahasiswa Rekayasa Perangkat Lunak yang memiliki ketertarikan pada pengembangan website dan teknologi informasi. Saya senang mempelajari hal-hal baru dan mengembangkan keterampilan di bidang teknologi.
             </p>
-        </div>
+        </section>
 
-        <div class="project">
-            <h3>2. Desain Website Reservasi Guest House</h3>
-            <p>
-                Perancangan tampilan website reservasi Guest House dengan
-                memperhatikan kebutuhan dan pengalaman pengguna.
-            </p>
-        </div>
-    </section>
+        <!-- Keahlian -->
+        <section class="section-card">
+            <h2>Keahlian</h2>
+            <div class="skills-flex">
+                <span class="skill-badge">HTML & CSS</span>
+                <span class="skill-badge">Desain UI/UX</span>
+                <span class="skill-badge">Canva</span>
+                <span class="skill-badge">Pengembangan Website</span>
+            </div>
+        </section>
 
-    <section>
-        <h2>Tentang Website Ini</h2>
-        <p>Model layanan: PaaS (Platform as a Service)</p>
-        <p>Model deployment: Cloud</p>
-        <p>Versi: 2</p>
-    </section>
+        <!-- Proyek Saya -->
+        <section id="proyek" class="section-card">
+            <h2>Proyek Saya</h2>
+            <div class="projects-grid">
+                <div class="project-box">
+                    <h3>1. Website Portofolio</h3>
+                    <p>
+                        Website portofolio sederhana yang dibuat menggunakan HTML dan CSS serta di-deploy menggunakan layanan cloud.
+                    </p>
+                    <div class="tags">
+                        <span>HTML/CSS</span>
+                        <span>Cloud Deploy</span>
+                    </div>
+                </div>
+                <div class="project-box">
+                    <h3>2. Desain Website Reservasi Guest House</h3>
+                    <p>
+                        Perancangan tampilan website reservasi Guest House dengan memperhatikan kebutuhan dan pengalaman pengguna.
+                    </p>
+                    <div class="tags">
+                        <span>UI/UX Design</span>
+                        <span>Reservasi</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section>
-        <h2>Kontak</h2>
-        <p>Email: darunnajah.ac.id</p>
-    </section>
+        <!-- Tentang Website Ini -->
+        <section class="section-card info-card">
+            <h2>Tentang Website Ini</h2>
+            <p><strong>Model layanan:</strong> PaaS (Platform as a Service)</p>
+            <p><strong>Model deployment:</strong> Cloud</p>
+            <p><strong>Versi:</strong> 2 - diperbarui 7 Oktober 2026</p>
+        </section>
 
+        <!-- Kontak -->
+        <section id="kontak" class="section-card">
+            <h2>Kontak</h2>
+            <p>Email: <a href="mailto:darunnajah.ac.id">darunnajah.ac.id</a></p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
     <footer>
-        <p>2026 Siti Iin Ratna Safitri</p>
+        <p>&copy; 2026 Siti Iin Ratna Safitri. All rights reserved.</p>
     </footer>
 
+    <!-- Pop-Up Modal Kontak -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2>Hubungi Saya 💬</h2>
+            <p style="font-size: 0.9rem; color: #94a3b8; margin-bottom: 15px;">Terima kasih sudah berkunjung! Kamu bisa menghubungi saya melalui:</p>
+            <div class="modal-contact-info">
+                <p>📧 <strong>Email:</strong> <a href="mailto:darunnajah.ac.id">darunnajah.ac.id</a></p>
+                <p>🎓 <strong>NIM:</strong> 22032062</p>
+                <p>🏫 <strong>Prodi:</strong> Rekayasa Perangkat Lunak</p>
+            </div>
+            <button class="btn-modal-close" onclick="closeModal()">Tutup</button>
+        </div>
+    </div>
+
+    <!-- Script JavaScript untuk Jalankan Pop-Up -->
+    <script>
+        function openModal() {
+            document.getElementById("contactModal").style.display = "flex";
+        }
+        function closeModal() {
+            document.getElementById("contactModal").style.display = "none";
+        }
+        // Tutup modal jika area di luar kotak diklik
+        window.onclick = function(event) {
+            var modal = document.getElementById("contactModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
